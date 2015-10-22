@@ -48,8 +48,70 @@
 
             Bonus, and you can get answers real fast
 					</script>
-				</section>
+        </section>
 
+        <section data-markdown>
+          <script type="text/template">
+           ## Using OSX
+
+           Start with Brew.sh
+
+           <pre style="font-size: 20px">$ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"</pre>
+           ```$ brew update```
+
+           ```$ brew upgrade```
+          </script>
+        </section>
+        <section data-markdown>
+          <script type="text/template">
+            ## Nodenv
+            A Node version manager
+
+            ```$ brew tap jawshooah/nodenv```
+
+            ```$ brew install jawshooah/nodenv/nodenv```
+
+            ```$ brew install --HEAD node-build```
+
+          </script>
+          </section>
+
+        <section data-markdown>
+          <script type="text/template">
+            ### Start Nodenv in terminal
+            ```vim .zshrc```
+
+            or
+
+            ```vim .bashrc```
+
+            add
+
+            ```eval "$(nodenv init -)"```
+          </script>
+          </section>
+        <section data-markdown>
+          <script type="text/template">
+            ### Example .*rc
+            ```
+            #
+            # Executes commands at the start of an interactive session.
+            #
+            # Authors:
+            #   Sorin Ionescu <sorin.ionescu@gmail.com>
+            #
+
+            # Source Prezto.
+            if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
+              source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
+              fi
+              eval "$(nodenv init -)"
+
+              # Customize to your needs...
+
+           ```
+          </script>
+        </section>
 				<section data-markdown>
 					<script type="text/template">
 						## IRC
